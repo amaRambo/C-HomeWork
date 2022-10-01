@@ -6,7 +6,7 @@ Console.WriteLine("Введите значение второго числа: ")
 int b = Convert.ToInt32(Console.ReadLine());
 if (a > b)
 {
-    Console.WriteLine($"Максимальное значение = {a} ");
+    Console.WriteLine($"Максимальное значение = {a}, минимальное значение = {b} ");
 }
 else
 {
@@ -16,7 +16,7 @@ else
     }
     else
     {
-        Console.WriteLine($"Максимальное значение = {b} ");
+        Console.WriteLine($"Максимальное значение = {b}, минимальное значение = {a} ");
     }
 
 }
