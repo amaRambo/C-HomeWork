@@ -4,19 +4,19 @@ Console.WriteLine("Введите значение первого числа: ")
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите значение второго числа: ");
 int b = Convert.ToInt32(Console.ReadLine());
-if( a > b)
+if (a > b)
 {
     Console.WriteLine($"Максимальное значение = {a} ");
 }
 else
 {
-    if( a==b)
+    if (a == b)
     {
-     Console.WriteLine("Числа равны");   
+        Console.WriteLine("Числа равны");
     }
     else
     {
-     Console.WriteLine($"Максимальное значение = {b} ");   
+        Console.WriteLine($"Максимальное значение = {b} ");
     }
-    
+
 }
