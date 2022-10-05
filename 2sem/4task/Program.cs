@@ -2,11 +2,18 @@
 
 Console.WriteLine("Введите число от 1 до 7: ");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a == 6 ^ a == 7)
+if (a > 0 && a < 8)
 {
-    Console.WriteLine("Ура, сегодня выходной!");
+    if (a == 6 ^ a == 7)
+    {
+        Console.WriteLine("Ура, сегодня выходной!");
+    }
+    else
+    {
+        Console.WriteLine("Иди Работай)))");
+    }
 }
 else
 {
-    Console.WriteLine("Иди Работай)))");
+    Console.WriteLine("Введенное число не входит в промежуток от 1 до 7");
 }
