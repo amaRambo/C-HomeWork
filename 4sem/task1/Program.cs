@@ -13,21 +13,21 @@ int b = enter("Введите второе число: ");
 
 int Multy(int a, int b)
 {
-    if(b !=0)
+    if (b != 0)
     {
         int number = 1;
-    int i = 1;
-    while(i<=b)
-    {
-        number = number * a;
-        i++;
-    }
-    return number;
+        int i = 1;
+        while (i <= b)
+        {
+            number = number * a;
+            i++;
+        }
+        return number;
     }
     else
     {
         return 1;
     }
-    
+
 }
-Console.WriteLine(Multy(a,b));
+Console.WriteLine(Multy(a, b));
