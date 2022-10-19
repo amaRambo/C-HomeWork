@@ -77,4 +77,4 @@ int[,] matr = MatrixMaker(str, stlb);
 PrintMatrex(matr);
 int sum_max = SumMax(matr);
 int sum_min = SumMin(matr);
-Console.WriteLine($"{sum_max} + {sum_min} = {sum_min + sum_max}");
+Console.WriteLine($"{sum_max} - {sum_min} = {sum_max - sum_min}");
