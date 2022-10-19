@@ -1,4 +1,6 @@
-﻿
+﻿// Задача 5: * Найдите максимальное значение в матрице по каждой строке, получите сумму этих максимумов. 
+// Затем найдите минимальное значение по каждой колонке,получите сумму этих минимумов. 
+// Затем из первой суммы (с максимумами) вычтите вторую сумму(с минимумами)
 
 
 int enter(string msg)
@@ -51,8 +53,28 @@ int SumMax(int[,] matr)
     return sum;
 }
 
+int SumMin(int[,] matr)
+{
+    int sum = 0;
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+        int min = matr[0, j];
+        for (int i = 0; i < matr.GetLength(0); i++)
+        {
+            if (min > matr[i, j])
+            {
+                min = matr[i, j];
+            }
+        }
+        sum = sum + min;
+    }
+    return sum;
+}
+
 int str = enter("Введите кол-во строк: ");
 int stlb = enter("Введите кол-во столбцов: ");
 int[,] matr = MatrixMaker(str, stlb);
 PrintMatrex(matr);
-Console.WriteLine(SumMax(matr));
+int sum_max = SumMax(matr);
+int sum_min = SumMin(matr);
+Console.WriteLine($"{sum_max} + {sum_min} = {sum_min + sum_max}");
