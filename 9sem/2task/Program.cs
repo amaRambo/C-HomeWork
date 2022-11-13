@@ -13,16 +13,16 @@ int Prompt(string msg)
 }
 
 
-int PrintNumbers(int m, int n)
+int FindSum(int m, int n)
 {
     if (m >= n + 1)
     {
         return 0;
     }
-    return m + PrintNumbers(m + 1, n);
+    return m + FindSum(m + 1, n);
 }
 
 int m = Prompt("vvedite 4islo ");
 int n = Prompt("vvedite 4islo ");
 Console.WriteLine();
-Console.WriteLine(PrintNumbers(m, n));
+Console.WriteLine(FindSum(m, n));

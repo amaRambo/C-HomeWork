@@ -11,7 +11,7 @@ int Prompt(string msg)
 }
 
 
-void PrintNumbers(int m, int n)
+void PrintEvenNumbers(int m, int n)
 {
     if (m > n)
     {
@@ -21,10 +21,10 @@ void PrintNumbers(int m, int n)
     {
         Console.Write(m + " ");
     }
-    PrintNumbers(m + 1, n);
+    PrintEvenNumbers(m + 1, n);
 }
 
 int m = Prompt("vvedite 4islo ");
 int n = Prompt("vvedite 4islo ");
 Console.WriteLine();
-PrintNumbers(m, n);
+PrintEvenNumbers(m, n);
